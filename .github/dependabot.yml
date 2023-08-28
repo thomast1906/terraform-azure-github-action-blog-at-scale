@@ -6,5 +6,14 @@
 version: 2
 updates:
   - package-ecosystem: "terraform" # See documentation for possible values
+    directory: "/modules/log_analytics"
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "terraform" # See documentation for possible values
+    directory: "/modules/private_dns_zone"
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "terraform" # See documentation for possible values
+    directory: "/modules/virtual_network"
     schedule:
       interval: "weekly"
